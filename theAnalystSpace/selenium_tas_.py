@@ -39,8 +39,12 @@ def call_page(url):
 
 if __name__ == '__main__':
     driver = webdriver.Chrome()
-    for url_str in Python_sel_Mysql():
-        call_page(url_str)
+    try:
+    
+        for url_str in Python_sel_Mysql():
+            call_page(url_str)
+    except:
+        pass
 
 
 
